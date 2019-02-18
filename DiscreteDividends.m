@@ -159,5 +159,3 @@ end
 % Price8 is the price of American call option
 price8=optval{1,1};
 
-% Why Straddle price is less than the sum of Put option price and Call option price:
-% Because for the Straddle?the discounted time would be 

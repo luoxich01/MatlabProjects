@@ -19,7 +19,10 @@
 %• The initial ex-dividend stock price S0
 %and which outputs the price as well as the composition of the replicating portfolio at every node of the tree 
 %and which also determines the optimal exercise dates.'
-
+%a. Apply your code to compute the initial prices of an American put and an American call 
+%with strike K=10 when r=0.02,u=1/d=e0.2 h,h=1/365, S0 = 10, T = 200 periods, δ = 0.05, and D = {50,100,150}.
+%b. Apply your code to compute the initial price of an American straddle with the same parameters as above. 
+%If your calculations are correct, you should obtain Straddle < P ut + Call. Why?
 
 % a 
 K=10;

@@ -82,3 +82,13 @@ end
 
 % Price5 is the price of American put option
 price5=optval{1,1};
+
+% The payoff function for call option
+function y=payoff3(ST,K)
+y=max(ST-K,0);
+end
+
+% The payoff function for put option
+function y=payoff4(ST,K)
+y=max(K-ST,0);
+end

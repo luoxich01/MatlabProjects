@@ -7,13 +7,12 @@
 %• The up and down factors u and d 
 %• The number of periods T
 %and which calculates the European option price as well as the composition of the replicating portfolio at every node of the tree.
-%a. Apply your code to compute the initial value of a straddle with T = 4, r = 0.02, √√
-%  h=0.25,u=erh+0.2 h,d=erh−0.2 h,S0 =100,andstrikeK=90.
+%a. Apply your code to compute the initial value of a straddle with T = 4, r = 0.02, 
+%   h=0.25,u=erh+0.2 h,d=erh−0.2 h,S0 =100,andstrikeK=90.
 %b. Apply your code to compute the initial value of a straddle with T = 40, r = 0.02,
-%√√
-%h=0.025,u=erh+0.2 h,d=erh−0.2 h,S0 =100,andstrikeK=90.
-%  c. Apply your code to compute the initial value of a binary call option with T = 4, √√
-%r=0.02,h=0.25,u=erh+0.2 h,d=erh−0.2 h,S0 =100,andstrikeK=90.
+%   h=0.025,u=erh+0.2 h,d=erh−0.2 h,S0 =100,andstrikeK=90.
+%c. Apply your code to compute the initial value of a binary call option with T = 4, 
+%  r=0.02,h=0.25,u=erh+0.2 h,d=erh−0.2 h,S0 =100,andstrikeK=90.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 1 Pricing European Options
 % a
@@ -138,6 +137,18 @@ end
 % Price3 is the price of European option
 price3=optval{1,1};
 
+% The payoff function for straddle
+function y=payoff1(ST,K)
+y=abs(ST-K);
+end
 
+% The payoff function for binary call option
+function y=payoff2(ST,K)
+if ST>K
+y=1;
+else
+y=0;
+end
+end
 
 

@@ -4,7 +4,8 @@
 %• The payoff function F (ST )
 %• The interest rate r
 %• The length of the period h
-%• The up and down factors u and d • The number of periods T
+%• The up and down factors u and d 
+%• The number of periods T
 %and which calculates the European option price as well as the composition of the replicating portfolio at every node of the tree.
 %a. Apply your code to compute the initial value of a straddle with T = 4, r = 0.02, √√
 %  h=0.25,u=erh+0.2 h,d=erh−0.2 h,S0 =100,andstrikeK=90.
